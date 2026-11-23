@@ -5,7 +5,6 @@
 Green Bloom Nursery Management System is a Python and MySQL-based application developed to manage nursery operations such as plant stock, suppliers, customers, billing, and sales reports.
 
 The project also includes a Streamlit web interface with plant images to provide easy and user-friendly management.
-
 ## 🎯 Objectives
 
 - Manage plant stock
