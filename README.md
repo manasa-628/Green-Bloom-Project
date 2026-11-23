@@ -1,31 +1,96 @@
 # 🌱 Green Bloom Nursery Management System
 
-A **Nursery Management System** developed using **Python, Streamlit, and MySQL** to manage plants, suppliers, customers, billing, inventory, and reports.
+## 📌 Project Description
 
-## 📌 Project Overview
+Green Bloom Nursery Management System is a Python and MySQL-based application developed to manage nursery operations such as plant stock, suppliers, customers, billing, and sales reports.
 
-Green Bloom Nursery Management System provides a simple interface for managing nursery operations. It allows users to maintain plant information, supplier and customer details, process customer purchases, and generate useful reports.
+The project also includes a Streamlit web interface with plant images to provide easy and user-friendly management.
 
-## ✨ Features
+## 🎯 Objectives
 
-* 🌱 Plant Management
-* 🚚 Supplier Management
-* 👤 Customer Management
-* 🧾 Billing Management
-* 📊 Sales Reports
-* 📦 Plant Stock Management
-* ⚠️ Low Stock Reports
-* 🖼️ Plant Image Upload
-* 🔎 Plant Search
+- Manage plant stock
+- View plant details
+- Search plants
+- Add new plants
+- Update plant details and quantity
+- Delete plant records
+- Manage supplier information
+- Manage customer information
+- Generate customer bills
+- Automatically update plant stock after a sale
+- Generate sales reports
 
 ## 🛠️ Technologies Used
 
-* **Python**
-* **Streamlit**
-* **MySQL**
-* **MySQL Connector**
-* **Pandas**
-* **Git & GitHub**
+- Python
+- MySQL
+- Streamlit
+- MySQL Connector
+- Pandas
+- VS Code
+- Git and GitHub
+
+## 🌿 Features
+
+### Plant Management
+
+- View all plants
+- Search plants
+- Add new plants
+- Update plant details and quantity
+- Delete plant records
+- View plant price and available stock
+- View supplier information
+- Display plant images
+
+### Supplier Management
+
+- View supplier details
+- Add new suppliers
+- Update supplier details
+- Delete supplier records
+- Manage supplier information
+
+### Customer Management
+
+- View customer details
+- Add new customers
+- Update customer details
+- Delete customer records
+- View customer purchase history
+
+### Billing Management
+
+- Select customer
+- Select plant
+- Enter purchase quantity
+- Calculate total amount
+- Generate customer bills
+- Save sales information
+- Update plant stock after a sale
+
+### Sales Reports
+
+- Total Sales Report
+- Available Plant Stock Report
+- Low Stock Plants Report
+- Customer Purchase History
+- View sales and transaction details
+
+## 🗄️ Database
+
+**Database Name:**
+
+```text
+green_bloom_db
+```
+
+### Tables
+
+- plants
+- suppliers
+- customers
+- sales
 
 ## 📂 Project Structure
 
@@ -51,10 +116,11 @@ Green-Bloom-Project/
 ├── db_connection.py
 ├── database.sql
 ├── requirements.txt
-└── .gitignore
+├── .gitignore
+└── README.md
 ```
 
-## 🚀 How to Run
+## ▶️ How to Run the Project
 
 ### 1. Clone the repository
 
@@ -74,51 +140,62 @@ cd Green-Bloom-Project
 pip install -r requirements.txt
 ```
 
-### 4. Configure MySQL
+### 4. Configure MySQL Database
 
-Create the required database using:
+- Open MySQL Workbench.
+- Execute the `database.sql` file to create the required database and tables.
+- Configure your MySQL connection details in `db_connection.py`.
 
-```text
-database.sql
-```
-
-Update the MySQL connection details in `db_connection.py` according to your local MySQL setup.
-
-### 5. Run the Streamlit application
+### 5. Run the Streamlit Application
 
 ```bash
 streamlit run app.py
 ```
 
-## 📊 Main Modules
+The Green Bloom web application will open in your browser.
 
-### Plant Management
+### 6. Run the Console Application
 
-Add, update, search, and manage plant information including plant images, price, quantity, category, and supplier.
+```bash
+python main.py
+```
 
-### Supplier Management
+## 🔐 Database Configuration
 
-Manage supplier information.
+Open `db_connection.py` and configure your MySQL connection details.
 
-### Customer Management
+Make sure the database name is:
 
-Store and manage customer details.
+```text
+green_bloom_db
+```
 
-### Billing Management
+**Note:** Do not upload your actual MySQL password to a public GitHub repository.
 
-Create customer bills and automatically update available plant stock.
+## 🧪 Testing
 
-### Reports Management
+The project includes the following functional areas:
 
-Generate reports such as:
+- Plant Management
+- Plant Search
+- Add, Update and Delete Plant Records
+- Supplier Management
+- Customer Management
+- Billing Management
+- Stock Updates After Sales
+- Sales Reports
+- Low Stock Reports
+- Plant Image Display
+- Streamlit Web Interface
 
-* Total Sales Report
-* Available Plant Stock
-* Low Stock Plants
-* Customer Purchase History
-
-## 👩‍💻 Author
+## 👩‍💻 Developer
 
 **Manasa**
 
-GitHub: **manasa-628**
+B.Tech - Data Science
+
+## 📌 Conclusion
+
+The Green Bloom Nursery Management System provides a simple and efficient solution for managing nursery operations, including plant inventory, suppliers, customers, billing, and sales reports.
+
+The project combines Python, MySQL, and Streamlit to provide database management along with a user-friendly web interface.
